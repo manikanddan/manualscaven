@@ -1,0 +1,529 @@
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollheader {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  margin-left:-40px;
+  margin-right:40px;
+  width:100%;
+  background-color: #f1f1f1;
+}
+
+
+.scrollprogress-container {
+  width:100%;
+  height: 5px;
+  background: white;
+}
+
+.scrollprogress-bar {
+  height: 5px;
+  background: rgb(6,36,36);
+  background: radial-gradient(circle, rgba(6,36,36,1) 0%, rgba(25,77,12,1) 50%, rgba(6,36,36,1) 76%);
+  width: 0%;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: whitesmoke; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #062424; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: whitesmoke;
+}
+
+.accordion:after {
+/* content: '\002B';*/
+  color: #777;
+  font-size: 30px;
+  float: right;
+}
+
+.active:after {
+ /*content: "\2212";*/
+}
+
+.panel {
+  padding: 0 10px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  height: 100%;
+}
+
+.projgrid {
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-auto-columns: minmax(200px, auto);
+    Grid-auto-flow: row;
+  
+    Grid-gap: 10px;
+    background-color: #a3a3a3;
+    text-align: left;
+    grid-template-areas:
+     "leftbox1"
+      "rightbox1"
+      "leftbox2"
+      "rightbox2"
+      "leftbox3"
+      "rightbox3"
+      "leftbox4"
+      "rightbox4" 
+      "leftbox5" 
+      "rightbox5"
+      "leftbox6" 
+      "rightbox6";
+     /* "leftbox1 rightbox1"
+      "leftbox2 rightbox2"
+      "leftbox3 rightbox3"
+      "leftbox4 rightbox4" 
+      "leftbox5 rightbox5";*/
+}
+ @media (max-width: 400px) {
+  .projgrid .panel{
+    grid-template-columns: auto auto;
+    height:100%;
+    grid-template-areas: 
+      "leftbox1"
+      "rightbox1"
+      "leftbox2"
+      "rightbox2"
+      "leftbox3"
+      "rightbox3"
+      "leftbox4"
+      "rightbox4" 
+      "leftbox5" 
+      "rightbox5"
+      "leftbox6" 
+      "rightbox6";
+  }
+}
+
+
+.leftbox1 {
+        grid-area: leftbox1;
+        
+    }
+
+.rightbox1 {
+        grid-area: rightbox1;
+    }
+.leftbox2 {
+        grid-area: leftbox2;
+       
+    }
+
+.rightbox2 {
+        grid-area: rightbox2;
+    }
+.leftbox3 {
+        grid-area: leftbox3;
+        
+    }
+
+.rightbox3 {
+        grid-area: rightbox3;
+    }
+.leftbox4 {
+        grid-area: leftbox4;
+      
+    }
+
+.rightbox4 {
+        grid-area: rightbox4;
+    }
+.leftbox5 {
+        grid-area: leftbox5;
+       
+    }
+
+.rightbox5 {
+        grid-area: rightbox5;
+    }
+.leftbox6 {
+        grid-area: leftbox5;
+       
+    }
+
+.rightbox6 {
+        grid-area: rightbox5;
+    }
+
+.projgrid > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.flexboxesaccordiontitles {
+  display: flex;
+  align-items: stretch; 
+}
+
+.flexboxesaccordiontitles > div {
+  
+  flex-flow: row wrap;
+  margin: 3px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.mumbai {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    font-size: 18px;
+    color: #881212;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+.mumbai2 {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    font-size: 14px;
+    color: #881212;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.cardcolumn {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.cardrow {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.cardrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .cardcolumn {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.uxcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+/* Slideshow container */
+.storyslideshow-container {
+  position: relative;
+  background: white;
+}
+
+/* Slides */
+.storymySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.storyprev, .storynext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.storynext {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.storyprev:hover, .storystorynext:hover {
+  background-color:transparent;
+}
+
+/* The dot/bullet/indicator container */
+.storydot-container {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.storydot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.storyactive, .storydot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.storyauthor {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  background-color: rgb(83, 83, 83);
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 30px;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-instagram {
+  
+  color: white;
+}
+
+.fa-pinterest {
+ 
+  color: white;
+}
+
+.fa-dribbble {
+
+  color: white;
+}
+
+
+.blogbody{
+
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.blogmain {
+  max-width: 1100px;
+  margin: auto;
+  
+}
+
+.blogh1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.bloggrow {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.bloggrow,
+.bloggrow > .blogcolumn {
+  padding: 3px;
+}
+
+/* Create three equal columns that floats next to each other */
+.blogcolumn {
+  float: left;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+  
+  
+}
+
+/* Clear floats after rows */ 
+.bloggrow:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Content */
+.blogcontent {
+ background-color:white;
+ padding: 1px 10px 0px 10px;
+ border: 1px solid whitesmoke;
+ line-height: 180%; 
+font-size: 16px; 
+font-weight: 200;
+text-align: left;
+}
+
+/* The "show" class is added to the filtered elements */
+.blogshow {
+  display: block;
+}
+
+/* Style the buttons */
+.blogbtn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 3px;
+  margin-bottom: 5px;
+ 
+}
+
+.blogbtn:hover {
+  background-color: #ddd;
+}
+
+.blogbtn.active {
+  background-color: #666;
+  color: white;
+}
+
+.blogmonthyear {
+  color: #666;
+  font-size: 12px;
+  text-align:right;
+
+}
+
+
+#blogmyBtnContainer{
+margin-left:-9px;
+}
+
+div.sketchgallery img {
+  width: 100%;
+  height: auto;
+  border: 1px inset rgb(219, 219, 219);
+}
+
+.sketchresponsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .sketchresponsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sketchresponsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.techpolaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+   display: block; 
+   margin-left: auto; 
+   margin-right: auto;
+}
+
+div.techcontainer {
+  text-align: center;
+  padding: 0.5px;
+  font-size: 16px;
+  background-color: rgb(233, 233, 233);
+}
+
+
+
+
+
+
+

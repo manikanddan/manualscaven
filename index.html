@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>MGC Proto</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mgcproto.css">
+<link rel="stylesheet" href="customcomponents.css">
+<link rel="stylesheet" href="careertimeline.css">
+<link rel="stylesheet" href="factcard.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body,h1,h2,h3,h4,h5 {font-family: "Helvetica", sans-serif}
+body {font-size:16px; color:#F0F0F0;-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-shadow: 1px 1px 1px rgba(0,0,0,0.004);text-rendering: optimizeLegibility;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("scrollprogressBar").style.width = scrolled + "%";
+    }
+</script>
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:50px; color:#fff!important;background-image: linear-gradient(to left, #062424, #052626, #032828, #022b2b, #002d2d);">X</a>
+        <div class="w3-container">
+            
+            <h3 class="w3-padding-64"><b>MGC</b></h3>
+        </div>
+        <div class="w3-bar-block">
+
+            
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span style="font-weight: 900; font-size: 25px; color:#99CCFF;">|</span> You are @home:))</a>
+            <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span style="font-weight: 900; font-size: 25px; color:#FF9933;">|</span> Projects & Experiments</a>
+            <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span style="font-weight: 900; font-size: 25px; color:#FF3366;">|</span> Career Timeline</a>
+            <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span style="font-weight: 900; font-size: 25px; color:#9933FF;">|</span> Learnings & Thoughts</a>
+            <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span style="font-weight: 900; font-size: 25px; color:#FFCC99;">|</span> CV</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span style="font-weight: 900; font-size: 25px; color:#00CCCC;">|</span> Contact</a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="https://in.linkedin.com/in/manikanddangc" class="fa fa-linkedin" target="_blank;"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-dribbble"></a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()" style="color:#fff!important;background-image: linear-gradient(to left, #062424, #052626, #032828, #022b2b, #002d2d);">☰</a>
+        <span>Manikanddan G C</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    
+
+    <!-- !PAGE CONTENT! -->
+        
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+        <!-- Header -->
+        
+        <div class="scrollheader">
+            <div class="scrollprogress-container">
+                <div class="scrollprogress-bar" id="scrollprogressBar"></div>
+            </div>
+        </div>
+
+        <div class="w3-container" style="margin-top:75px" class="w3-round">
+            <p style="font-size:65px; color: #062424; text-rendering: optimizeSpeed; font-weight: 500;">Hello,<br>I'm Manikanddan G C</p>
+            <hr style="width:50px;border:5px solid #062424">
+            <H1 style="color: #062424;"> Minimalist Product UX Designer</H1>
+            <span style="color: #1d2c2c; font-size: 18px; ">"Design is MORE than Communication and Experience."</span><br><br>
+            <div style="color: #1d2c2c; font-size: 18px;" > <Span style="color: #062424; font-size: 16px; text-rendering: optimizeSpeed; font-weight: 600;">Technology Product Focus:</Span>
+                Blockchain, AI, Voice, IoT & Connected Solutions, AR / VR / Expanded / Mixed Realities, Human Interaction - Emotions, Language, Accessibility.
+            </div>
+            <p style="color: #1d2c2c; font-size: 18px;"> <Span style="color: #062424; font-size: 18px; font-weight: 600;">Digital Channels:</Span> 1" Wearables -- 4" to
+                6.5" Mobile -- 7" to 12" Tablets -- 13" to 25" Web -- 32" to 100" Smart TVs / Kiosks / Digital Signages </p>
+        </div>
+
+
+        <!-- showcase -->
+        <div class="w3-container" id="showcase" style="margin-top:120px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Projects & Experiments</b></h1>
+            <hr style="width:50px;border:5px solid #062424" class="w3-round">
+            <p style="color:#062424; font-size: 18px;">I would like to:)))<br><br></p>
+            <p style="color:#1d2c2c; font-size: 18px;"><Span style="color: #062424; font-size: 16px; text-rendering: optimizeSpeed; font-weight: 600; line-height: 2;"> Solution Design - </Span>Societal problems visualised as Prototypes
+            <br>
+            <Span style="color: #062424; font-size: 16px; text-rendering: optimizeSpeed; font-weight: 600; line-height: 2;">Process Experiments -  </Span>UX Process Improvements <br>
+            <Span style="color: #062424; font-size: 16px; text-rendering: optimizeSpeed; font-weight: 600; line-height: 2;">
+            UX Trends </Span> - Tools, Design Concepts, Test Techniques, Coverage and Conversion<br>
+            <Span style="color: #062424; font-size: 16px; text-rendering: optimizeSpeed; font-weight: 600; line-height: 2;">Design Languages & Tools</Span> - Simple experiments chooing right technical concepts from HTML, JS, CSS, Design Tools How-to<br>
+            <Span style="color: #062424; font-size: 16px; text-rendering: optimizeSpeed; font-weight: 600; line-height: 2;">Only Best 2 Tools</Span> - Experience Sharing
+            </p>
+            <p style="color:#1d2c2c;">
+                FEW of my Works...REALLY??.............ofcourse Yes......<br><br>
+            </p>
+            <button class="accordion">
+                
+                <Div class="flexboxesaccordiontitles">
+                    <div style="background-image: linear-gradient(rgb(218, 218, 218), rgb(177, 177, 177)); background-color: #F6F6F6; font-size: 18px; color: #062424; text-align: center; padding: 3px;"><b>Manual Scavenging in Mumbai, India. How this could be solved?</b></div>
+                    <div style="background-color: #062424; font-size: 16px; color: #F6F6F6; text-align: left; padding-left: 15px; padding-right: 15px;">A Tech story visualised to solve human problems leveraging AI - Machine Learning, IoT - Sensors, Other connected smart
+                solutions</div>
+                
+                </div>
+            </button>
+            
+            <Div class="panel" style="height: 100%;">
+                
+                <Div class="projgrid" style="height: 100%;">
+                    <Div style=" text-align: center; font-size:14px; color:#062424; word-wrap: break-word; font-weight: lighter; font-weight: bold">Read Time 10 Mins</Div>
+                    <Div class="1leftbox1" style="font-size: 18px; color: #062424; text-align: left;"><b>The Size of the Problem</b></div>
+                    <Div class="1rightbox1">
+                       
+                            <div class="storyslideshow-container">
+                            
+                                <div class="storymySlides">
+                                    <p class="storyauthor">1</p>
+                                    <P><span class="mumbai">MUMBAI, 21 Million People, 10000 tonnes waste/day </span></P>
+                                    
+                                </div>
+                            
+                                <div class="storymySlides">
+                                    <p class="storyauthor">2</p>
+                                    <P><span class="mumbai">4,357 labourers to clean 54,600 manholes</span></P>
+                                   
+                                </div>
+                            
+                                <div class="storymySlides">
+                                    <p class="storyauthor">3</p>
+                                    <P style="color: #062424;">Open sewage lines with <span class="mumbai">BARE BODIES without PROTECTION</span></P>
+                                   
+                                </div>
+                                <div class="storymySlides">
+                                    <p class="storyauthor">4</p>
+                                    <P style="color: #062424;">Their <span class="mumbai">Lifespan <45years </span>for breathing TOXIC fumes every time</p>
+                                    
+                                </div>
+                                <div class="storymySlides">
+                                    <p class="storyauthor">5</p>
+                                    <P style="color: #062424;"><span class="mumbai">1,637 workers DEAD in last SIX YEARS</span></P>
+                                    
+                                </div>
+                                <div class="storymySlides">
+                                    <p class="storyauthor">6</p>
+                                    <P style="color: #062424;"><span class="mumbai">Most drink heavily.</span>There is no other way to enter hell and survive</P>
+                                    
+                                </div>
+                                <div class="storymySlides">
+                                    <p class="storyauthor">7</p>
+                                    <P style="color: #062424;"><span class="mumbai">9,600 deaths are reported each year</span></P>
+                                    
+                                </div>
+                                <div class="storymySlides">
+                                    <p class="storyauthor">8</p>
+                                    <P style="color: #062424;">Many<span class="mumbai"> SUFFER</span> from jaundice, tuberculosis and acute liver malfunctions</P>
+                                    
+                                </div>
+                                <div class="storymySlides">
+                                    <p class="storyauthor">9</p>
+                                    <P style="color: #062424;">Dead babies, road kills, sanitary napkins drenched in blood, glass, medical waste, 
+                                    diapers, What NOT!! <span class="mumbai">FULL OF SHIT</span></P>
+                                    
+                                </div>
+                                <div class="storymySlides">
+                                    <p class="storyauthor">10</p>
+                                    <P style="color: #062424;">There is<span class="mumbai"> nothing</span> that these workers<span class="mumbai"> havent touched with their bare hands</span></P>
+                                    
+                                </div>
+                            
+                                <a class="storyprev" onclick="plusSlides(-1)">❮</a>
+                                <a class="storynext" onclick="plusSlides(1)">❯</a>
+                            
+                            </div>
+                            
+                            <div class="storydot-container">
+                                <span class="storydot" onclick="currentSlide(1)"></span>
+                                <span class="storydot" onclick="currentSlide(2)"></span>
+                                <span class="storydot" onclick="currentSlide(3)"></span>
+                                <span class="storydot" onclick="currentSlide(4)"></span>
+                                <span class="storydot" onclick="currentSlide(5)"></span>
+                                <span class="storydot" onclick="currentSlide(6)"></span>
+                                <span class="storydot" onclick="currentSlide(7)"></span>
+                                <span class="storydot" onclick="currentSlide(8)"></span>
+                                <span class="storydot" onclick="currentSlide(9)"></span>
+                                <span class="storydot" onclick="currentSlide(10)"></span>
+                                <span style="text-align: center; color:gray; font-size: 14px;"><br>Take 2 minutes to read story with just 10 lines</span>
+                            </div>
+                            
+                            <script>
+                                var slideIndex = 1;
+                                storyshowSlides(slideIndex);
+
+                                function plusSlides(n) {
+                                    storyshowSlides(slideIndex += n);
+                                }
+
+                                function currentSlide(n) {
+                                    storyshowSlides(slideIndex = n);
+                                }
+
+                                function storyshowSlides(n) {
+                                    var i;
+                                    var slides = document.getElementsByClassName("storymySlides");
+                                    var dots = document.getElementsByClassName("storydot");
+                                    if (n > slides.length) { slideIndex = 1 }
+                                    if (n < 1) { slideIndex = slides.length }
+                                    for (i = 0; i < slides.length; i++) {
+                                        slides[i].style.display = "none";
+                                    }
+                                    for (i = 0; i < dots.length; i++) {
+                                        dots[i].className = dots[i].className.replace(" storyactive", "");
+                                    }
+                                    slides[slideIndex - 1].style.display = "block";
+                                    dots[slideIndex - 1].className += " storyactive";
+                                }
+                            </script>
+
+                    </div>
+
+                    <Div class="2leftbox2" style="font-size: 18px; color: #062424; text-align: left;"><b>Solution Elements - Few Facts</b></div>
+                    <Div class="2rightbox2">
+                    
+                    <div class="factboxesContainer">
+                    
+                        <div class="factcardBox">
+                            <div class="factcard">
+                                <div class="factfront">
+                                    <P style="color:#062424;">Key Substances for Sewage Blockage</P>
+                                    <ul style="text-align: left;">
+                                        <li>Hair</li>
+                                        <li>Fat</li>
+                                        <li>Oil</li>
+                                        <li>Chemicals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="factcardBox">
+                            <div class="factcard">
+                                <div class="factfront">
+                                    <P style="color:#062424;">IoT Sensors in every home outlet</P>
+                                    <ul style="text-align: left;">
+                                        <li>Measure level of water in sewage flow</li>
+                                        <li>Measure chemicals</li>
+                                        <li>Measure toxicity</li>
+                                        <li>Chemicals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="factcardBox">
+                            <div class="factcard">
+                                <div class="factfront">
+                                    <P style="text-align: middle; padding:22%;">Data Collection <span style="color:#062424;">Through Sensors</span></P>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="factcardBox">
+                            <div class="factcard">
+                                <div class="factfront">
+                                    
+                                    <P style="text-align: middle; padding:20%;">Machine Learning Algorithms<span style="color:#062424;"> To predict blockages</span> </P>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="factcardBox">
+                            <div class="factcard">
+                                <div class="factfront">
+                                    <p style="text-align: middle; padding:20%;">Data Transmission <span style="color:#062424;">Through Network Hubs</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="factcardBox">
+                            <div class="factcard">
+                                <div class="factfront">
+                                    <P style="text-align: middle; padding:3%;"> <span style="color:#062424;">SMART BALLS -</span><a href="https://vimeo.com/219848759" target="_blank"> Pure Technologies - Smart Ball </a> (kind of simple mechanisms
+                                    which is cost effective) to inspect, detect, repair the problem</p>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="factcardBox">
+                            <div class="factcard">
+                                <div class="factfront">
+                                    <p style="text-align: middle; padding:20%;">Preserve Manual Scavengers Jobs <span style="color:#062424;">by maintaining Smart Balls</span> </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+    
+                
+                    </div>
+
+                    <Div class="3leftbox3" style="font-size: 18px; color: #062424; text-align: left;"><b>Visualised Solution Overview</b></div>
+                    <Div class="3rightbox3" style="font-size: 18px; color: #062424; text-align: left;">
+                    
+                       
+                    <div class="techpolaroid">
+                        <img src="soln/solnmodel.PNG" alt="solnmodel" style="width:100%;">
+                        <div class="techcontainer">
+                            <p>Solution Model</p>
+                        </div>
+                    </div>
+                    
+                    <div class="techpolaroid">
+                        <img src="soln/techsoln.PNG" alt="soln/techsoln.PNG" style="width:100%;">
+                        <div class="techcontainer">
+                            <p>Solution Overview with roles and their app features</p>
+                        </div>
+                    </div>
+                    
+
+
+                    </div>
+
+
+                    <Div class="4leftbox4" style="font-size: 18px; color: #062424; text-align: left;"><b>UX Strategy for iPad Product Design</b></div>
+                    <Div class="4rightbox4" style="font-size: 18px; color: #062424; text-align: left;">What I think!!!<br><br>
+                    UX Process will not be same for every application, specifically ENTERPRISE APPS, its enough to focus on
+                    right process areas instead of focusing on every process areas.<br><br>
+                    Created UX for eliminating Manual Scavenging through Technology and believe NO Human should work in HUMAN SHIT<br><br>
+                    
+                    <div class="cardrow">
+                        <div class="cardcolumn">
+                            <div class="uxcard">
+                                <h3 style="color: #062424; text-align:left;">User Research</h3>
+                                <ul style="text-align: left;color: #696969; list-style-type: square; font-size:16px;">
+                                <li>Supervisor - Minimum Systems Knowledge </li>
+                                <li>Fieldworkers - NO Systems Knowledge</li></ul>
+                            </div>
+                        </div>
+                    
+                        <div class="cardcolumn">
+                            <div class="uxcard">
+                                <h3 style="color: #062424; text-align:left;">User Persona</h3>
+                                <ul style="text-align: left;color: #696969; list-style-type: square; font-size:16px;">
+                                    <li>Supervisors - Have Bachelors / Masters, Old, OK to learn few things </li>
+                                    <li>Field Workers - Not Educated, Not willing to learn</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cardcolumn">
+                            <div class="uxcard">
+                                <h3 style="color: #062424; text-align:left;">Content Strategy</h3>
+                                <ul style="text-align: left;color: #696969; list-style-type: square; font-size:16px;">
+                                    <li>Dont give too many details or workflows.</li>
+                                    <li>Give only what is required to complete tasks.</li>       
+                                </ul>                              
+                            </div>
+                        </div>
+
+                        <div class="cardcolumn">
+                        <div class="uxcard">
+                            <h3 style="color: #062424; text-align:left;">Information Architecture</h3>
+                            <ul style="text-align: left;color: #696969; list-style-type: square; font-size:16px;">
+                                <li>Supervisors - Login --> Filter Jobs --> View Job Details </li>
+                                <li>Supervisors - Login --> Dashboard --> Search/Filter/Select Contents </li>
+                                <li>Supervisors - Login --> Incident Timelines --> Search/Filter/Select Contents</li>
+                                <li>Supervisors - Login --> FieldWorkers Status --> Search/Filter/Select Contents </li>
+                                <li>Supervisors - Login --> Filter Jobs --> View Job Details </li>
+                                <li>Field Workers - Login --> View Jobs --> Select Job --> Choose Vehicle --> Collect Smartballs --> Complete Jobs</li>
+                                <li>Field Workers - Login --> My Jobs-> My Job Analytics</li>
+                            </ul>
+                        </div>
+                        </div>
+
+                     
+                        <div class="cardcolumn">
+                            <div class="uxcard">
+                                <h3 style="color: #062424; text-align:left;">Tools Used</h3>
+                                <ul style="text-align: left;color: #696969; list-style-type: square; font-size:16px;">
+                                    <li>Adobe XD</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cardcolumn">
+                            <div class="uxcard">
+                                <h3 style="color: #062424; text-align:left;">Visual Design</h3>
+                                <ul style="text-align: left;color: #696969; list-style-type: square; font-size:16px;">
+                                    <li>Color Schema - Chose based on familiarity and environment app will be operated </li>
+                                    <li>Typography - SanFrancisco</li>
+                                    <li>UI Components - Simple UI Components</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cardcolumn">
+                            <div class="uxcard">
+                                <h3 style="color: #062424; text-align:left;">Animations</h3>
+                                <ul style="text-align: left;color: #696969; list-style-type: square; font-size:16px;">
+                                    <li>Applied only at right places to get USERS ATTENTION</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="cardcolumn">
+                            <div class="uxcard">
+                                <h3 style="color: #062424; text-align:left;">Design Considerations</h3>
+                                <ul style="text-align: left;color: #696969; list-style-type: square; font-size:16px;">
+                                    <li>Human Language, Emotions Mapping</li>
+                                    <li>No more than 2 layers of Navigation</li>
+                                    <li>Map Real World with Machine World</li>
+                                    <li>Not Too many Details - Only What is required to experience on-the-go with 10 inch screen</li>
+                                    <li>Motivational quotes in landing screen</li>
+                                </ul>
+                            </div>
+                        </div>
+                            
+                    </div>
+                    </Div>
+            
+                    <Div class="5leftbox5" style="font-size: 18px; color: #062424; text-align: left;"><b>Initial Sketches, Prototypes, Quick Demo</b></div>
+                    <Div class="5rightbox5">
+                        <div class="cardrow">
+                            <div class="cardcolumn">
+                                <div class="uxcard">
+                                    <h3 style="color: #062424; text-align:left;">Initial Sketches</h3>
+                                    
+                                    <div class="sketchresponsive">
+                                        <div class="sketchgallery">
+                                            <img src="sketches/s1.png" alt="s1" width="600" height="400">
+                                        </div>
+                                    </div>
+                                    <div class="sketchresponsive">
+                                        <div class="sketchgallery">
+                                            <img src="sketches/s2.png" alt="s2" width="600" height="400">
+                                        </div>
+                                    </div>
+                                    <div class="sketchresponsive">
+                                        <div class="sketchgallery">
+                                            <img src="sketches/s3.png" alt="s3" width="600" height="400">
+                                        </div>
+                                    </div>
+                                    <div class="sketchresponsive">
+                                        <div class="sketchgallery">
+                                            <img src="sketches/s4.png" alt="s4" width="600" height="400">
+                                        </div>
+                                    </div>
+                                    <div class="sketchresponsive">
+                                        <div class="sketchgallery">
+                                            <img src="sketches/s5.png" alt="s5" width="600" height="400">
+                                        </div>
+                                    </div>
+                                    <div class="sketchresponsive">
+                                        <div class="sketchgallery">
+                                            <img src="sketches/s6.png" alt="s6" width="600" height="400">
+                                        </div>
+                                    </div>
+                                    <div class="sketchresponsive">
+                                        <div class="sketchgallery">
+                                            <img src="sketches/s7.png" alt="s7" width="600" height="400">
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                            <div class="cardcolumn">
+                                <div class="uxcard">
+                                    <h3 style="color: #062424; text-align:left;">Prototype - Login, Fieldworker, Supervisor</h3>
+                                    
+                                    <div class="w3-content">
+                                        <img class="protomySlides" src="protos/p1.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p2.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p3.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p4.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p5.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p6.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p7.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p8.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p9.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p10.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p11.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p12.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p13.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p14.png" style="width:100%">
+                                        <img class="protomySlides" src="protos/p15.png" style="width:100%">
+                                    </div>
+                                   
+                                    
+                                    <div class="w3-center">
+                                        <div class="w3-section">
+                                            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                                            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        var slideIndex = 1;
+                                        showDivs(slideIndex);
+
+                                        function plusDivs(n) {
+                                            showDivs(slideIndex += n);
+                                        }
+
+                                        function currentDiv(n) {
+                                            showDivs(slideIndex = n);
+                                        }
+
+                                        function showDivs(n) {
+                                            var i;
+                                            var x = document.getElementsByClassName("protomySlides");
+                                            var dots = document.getElementsByClassName("demo");
+                                            if (n > x.length) { slideIndex = 1 }
+                                            if (n < 1) { slideIndex = x.length }
+                                            for (i = 0; i < x.length; i++) {
+                                                x[i].style.display = "none";
+                                            }
+                                            for (i = 0; i < dots.length; i++) {
+                                                dots[i].className = dots[i].className.replace(" w3-red", "");
+                                            }
+                                            x[slideIndex - 1].style.display = "block";
+                                            dots[slideIndex - 1].className += " w3-red";
+                                        }
+                                    </script>
+                            
+                                </div>
+                            </div>
+
+                            <div class="cardcolumn">
+                                <div class="uxcard">
+                                    <h3 style="color: #062424; text-align:left;">Quick Demo</h3>
+                                    <div><P style="text-align:left; color:#1d2c2c; font-size:16px;"><span style="font-weight: 600;">Fieldworker / Supervisor:</span> Login via Face ID and land in homepage OR login via PIN 1 time PIN setup</P></div>
+                                    <video width="600" controls style=" width: 100%; height: auto;">
+                                       
+                                        <source src="vids/loginpinset.mp4" type="video/mp4">
+                                       
+                                        Your browser does not support HTML5 video.
+                                    </video>
+                                    <div>
+                                        <P style="text-align:left; color:#1d2c2c; font-size:16px;"><span style="font-weight: 600;">Fieldworker: </span>View Jobs, Select Job, Select Vehicle to reach destination, Drop Smart balls and confirm the
+                                            problem, collect the smartballs by locating in map, complete the job. View Job Analytics. </P>
+                                    </div>
+                                    <video width="600" controls style=" width: 100%; height: auto;">
+                                        
+                                        <source src="vids/fieldworker.mp4" type="video/mp4">
+                                        Your browser does not support HTML5 video.
+                                    </video>
+                                    <div>
+                                        <P style="text-align:left; color:#1d2c2c; font-size:16px;"><span style="font-weight: 600;">Supervisor: </span>View and Filter Jobs, View Jobs that are being attended, Dashboard, Incident Timelines,
+                                            Fieldworker Availability.
+                                        </P>
+                                    </div>
+                                    <video width="600" controls style=" width: 100%; height: auto;">
+                                        
+                                       
+                                        <source src="vids/supervisor.mp4" type="video/mp4">
+                                        Your browser does not support HTML5 video.
+                                    </video>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+
+                    <Div class="6leftbox6" style="font-size: 18px; color: #062424; text-align: left;"><b>Testing, Learning and outcomes</b></div>
+                    <Div class="6rightbox6">
+                        <div class="cardcolumn">
+                            <div class="uxcard">
+                                <h3 style="color: #062424; text-align:left;">Test Strategy</h3>
+                                <ul style="text-align: left;color: #696969; list-style-type: square; font-size:16px;">
+                                    <li>Test - Only with People who are not familiar with computer systems</li>
+                                    <li>Challenges Faced - Make Testers understand how the system works, Know your role and how efficiently you
+                                    completed given tasks</li>
+                                    <li>Test Outcome - Human Emotion Language to be mapped with Machine Communication Language</li>
+                                    <li>Test Outcome - Sometimes unfamiliar with buttons or UI controls used</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cardrow">
+                            <div class="cardcolumn">
+                                <div class="uxcard">
+                                    <h3 style="color: #062424; text-align:left;">Learning and Outcomes</h3>
+                                        <ul style="text-align: left;color: #696969; list-style-type: square; font-size:16px;">
+                                            <li>Tool level Learning - XD, Photoshop, Illustrator</li>
+                                            <li>Use 1 or 2 Auth Mechanisms - either Fingerprint or Face ID or PIN</li>
+                                            <li>Color Support during Bright Sunlight and Dark Evenings</li>
+                                            <li>Typography for Good Readability</li>
+                                            <li>More Minimalism with right content strategy</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+            </div>
+               
+            
+    </div>
+            
+            <button class="accordion">
+                <Div class="flexboxesaccordiontitles">
+                    <div style="background-image: linear-gradient(rgb(218, 218, 218),rgb(177, 177, 177)); background-color: #F6F6F6; font-size: 18px; 
+                    color: #062424; text-align: center; padding: 2px 2px 2px 2px;"><b>My Portfolio Design with HTML5 and CSS3, but used JS which I dont want to.</b></div>
+                    <div style="background-color: #062424; font-size: 16px; color: #F6F6F6; text-align: left; padding-left: 15px;">Not a GREAT Design but tried 
+                        to apply experience factors liken proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, se................</div>
+                        
+                </div>
+            </button>
+            <Div class="panel">
+                <Div class="projgrid">
+                    <Div style=" text-align: center; font-size:14px; color:#062424; word-wrap: break-word; font-weight: lighter; font-weight: bold">Read
+                        Time 10 Mins</Div>
+                    <Div class="1leftbox1">Blockchain Project for Music Fests</div>
+                    <Div class="1rightbox1">Some text about our services - what we do and what we offer. We are lorem ipsum
+                        consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <Div class="2leftbox2">Visualised SOlution2</div>
+                    <Div class="2rightbox2">Some text about our services - what we do and what we offer. We are lorem ipsum
+                        consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <Div class="3leftbox3">Visualised SOlution3</div>
+                    <Div class="3rightbox3">Some text about our services - what we do and what we offer. We are lorem ipsum
+                        consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <Div class="4leftbox4">Visualised SOlution4</div>
+                    <Div class="4rightbox4">Some text about our services - what we do and what we offer. We are lorem ipsum
+                        consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <Div class="5leftbox5">Visualised SOlution5</div>
+                    <Div class="5rightbox5">Some text about our services - what we do and what we offer. We are lorem ipsum
+                        consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <Div class="6leftbox6">Visualised SOlution6</div>
+                    <Div class="6rightbox6">Some text about our services - what we do and what we offer. We are lorem ipsum
+                            consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        
+            </div>
+            </div>
+
+           
+    <button class="accordion">
+        <Div class="flexboxesaccordiontitles">
+            <div style="background-image: linear-gradient(rgb(218, 218, 218),rgb(177, 177, 177)); background-color: #F6F6F6; font-size: 18px; 
+            color: #062424; text-align: center; padding: 2px 2px 2px 2px;"><b>Blockchain Project for Music Fest. Is it viable options?</b></div>
+            <div style="background-color: #062424; font-size: 16px; color: #F6F6F6; text-align: left; padding-left: 15px;">A concept model for how Blockchain
+            could be used for MUSIC rights and increase Fans Experience with VR. Just a concept which would become TRUE One Day.</div>
+            
+        </div>
+    </button>
+    <div class="panel">
+        <Div class="projgrid">
+            <Div style=" text-align: center; font-size:14px; color:#062424; word-wrap: break-word; font-weight: lighter; font-weight: bold">Read
+                Time 10 Mins</Div>
+            <Div class="1leftbox1">The size of problem</div>
+            <Div class="1rightbox1">Some text about our services - what we do and what we offer. We are lorem ipsum
+                consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <Div class="2leftbox2">Visualised SOlution2</div>
+            <Div class="2rightbox2">Some text about our services - what we do and what we offer. We are lorem ipsum
+                consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <Div class="3leftbox3">Visualised SOlution3</div>
+            <Div class="3rightbox3">Some text about our services - what we do and what we offer. We are lorem ipsum
+                consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <Div class="4leftbox4">Visualised SOlution4</div>
+            <Div class="4rightbox4">Some text about our services - what we do and what we offer. We are lorem ipsum
+                consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <Div class="5leftbox5">Visualised SOlution5</div>
+            <Div class="5rightbox5">Some text about our services - what we do and what we offer. We are lorem ipsum
+                consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <Div class="6leftbox6">Visualised SOlution6</div>
+                <Div class="6rightbox6">Some text about our services - what we do and what we offer. We are lorem ipsum
+                    consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </Div>
+        </div>
+        </div>
+    
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+        <!-- Services -->
+        <div class="w3-container" id="services" style="margin-top:50px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Career Timeline</b></h1>
+            <hr style="width:50px;border:5px solid #062424" class="w3-round">
+            <div class="careercontainer">
+            
+                <div class="careertimeline-block careertimeline-block-right">
+                    <div class="careermarker"></div>
+                    <div class="careertimeline-content">
+                        <h3 class="careerh1class">First Year</h3>
+                        <span class="careerh1span">Some work experience</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                </div>
+            
+                <div class="careertimeline-block careertimeline-block-left">
+                    <div class="careermarker"></div>
+                    <div class="careertimeline-content">
+                        <h3 class="careerh1class">Seconed Year</h3>
+                        <span class="careerh1span">Some work experience</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                </div>
+            
+                <div class="careertimeline-block careertimeline-block-right">
+                    <div class="careermarker"></div>
+                    <div class="careertimeline-content">
+                        <h3 class="careerh1class">Third Year</h3>
+                        <span class="careerh1span">Some work experience</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                </div>
+            
+                <div class="careertimeline-block careertimeline-block-left">
+                    <div class="careermarker"></div>
+                    <div class="careertimeline-content">
+                        <h3 class="careerh1class">Fourth Year</h3>
+                        <span class="careerh1span">Some work experience</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                </div>
+            
+                <div class="careertimeline-block careertimeline-block-right">
+                    <div class="careermarker"></div>
+                    <div class="careertimeline-content">
+                        <h3 class="careerh1class">Fifth Year</h3>
+                        <span class="careerh1span">Some work experience</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                </div>
+
+                <div class="careertimeline-block careertimeline-block-left">
+                    <div class="careermarker"></div>
+                    <div class="careertimeline-content">
+                        <h3 class="careerh1class">Sixth Year</h3>
+                        <span class="careerh1span">Some work experience</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                </div>
+
+                <div class="careertimeline-block careertimeline-block-right">
+                    <div class="careermarker"></div>
+                    <div class="careertimeline-content">
+                        <h3 class="careerh1class">Seventh Year</h3>
+                        <span class="careerh1span">Some work experience</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+
+        </div>
+
+        <!-- Designers -->
+        <div class="w3-container" id="designers" style="margin-top:120px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Learnings & Thoughts</b></h1>
+            <hr style="width:50px;border:5px solid #062424" class="w3-round">
+            <div class="blogbody">
+            <div class="blogmain">
+                <h2 style="color: #062424; text-align: left; margin-left: -12px;"> 1 Minute Reads</h2>
+            
+                <div id="blogmyBtnContainer">
+                    <button class="blogbtn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="blogbtn" onclick="filterSelection('nature')"> Nature</button>
+                    <button class="blogbtn" onclick="filterSelection('cars')"> Cars</button>
+                    <button class="blogbtn" onclick="filterSelection('people')"> People</button>
+                    <button class="blogbtn" onclick="filterSelection('html')"> HTML</button>
+                    <button class="blogbtn" onclick="filterSelection('css')"> CSS</button>
+                    <button class="blogbtn" onclick="filterSelection('photoshop')"> Photoshop</button>
+                    <button class="blogbtn" onclick="filterSelection('illustrator')"> Illustrator</button>
+                </div>
+            
+                <!-- Portfolio Gallery Grid -->
+                <div class="bloggrow">
+                    <div class="blogcolumn nature">
+                        <div class="blogcontent">
+                            
+                            <h4 style="color: #062424;">Mountains</h4>
+                            <p style="color: #062424;">Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p>
+                            <P class="blogmonthyear">Jan 2018</P>
+                        </div>
+                    </div>
+                    <div class="blogcolumn nature">
+                        <div class="blogcontent">
+                            
+                            <h4 style="color: #062424;">Lights</h4>
+                            <p style="color: #062424;">Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="blogcolumn html">
+                        <div class="blogcontent">
+                    
+                            <h4 style="color: #062424;">HTML</h4>
+                            <p style="color: #062424;">Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..Loremmdolor..Lorem ipsum dolor..Loremmdolor..Lorem ipsum dolor..Loremmdolor..Lorem ipsum dolor..Loremmdolor..Lorem ipsum dolor..Loremmdolor..Lorem ipsum dolor..Loremmdolor..Lorem ipsum dolor..Loremmdolor..Lorem ipsum dolor..Loremm
+                                dolor..Lorem ipsum dolor..Loremm dolor..Lorem ipsum dolor..Loremm dolor.
+                                .Lorem ipsum dolor..Lorem
+                                
+                                ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="blogcolumn photoshop">
+                        <div class="blogcontent">
+                    
+                            <h4 style="color: #062424;">Photoshop</h4>
+                            <p style="color: #062424;">Lorem ipsum dolor.Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor...</p>
+                        </div>
+                    </div>
+
+                    <div class="blogcolumn css">
+                        <div class="blogcontent">
+                    
+                            <h4 style="color: #062424;">CSS</h4>
+                            <p style="color: #062424;">Lorem ipsum dolor..</p>
+                            <p style="color: #062424;">Lorem ipsum dolor..</p>
+                            <p style="color: #062424;">Lorem ipsum dolor..</p>
+                            <p style="color: #062424;">Lorem ipsum dolor..</p>
+
+                        </div>
+                    </div>
+
+                    <div class="blogcolumn illustrator">
+                        <div class="blogcontent">
+                    
+                            <h4 style="color: #062424;">Illustrator</h4>
+                            <p style="color: #062424;">Lorem ipsumLorem ipsum dolor.. dolor..</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="blogcolumn nature">
+                        <div class="blogcontent">
+                            
+                            <h4 style="color: #062424;">Forest</h4>
+                            <p style="color: #062424;">Lorem ipsLorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..um dolor..</p>
+                        </div>
+                    </div>
+            
+                    <div class="blogcolumn cars">
+                        <div class="blogcontent">
+                            
+                            <h4 style="color: #062424;">Retro</h4>
+                            <p style="color: #062424;">Lorem ipLorem ipsum dolor..Lorem ipsum dolor..sum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="blogcolumn cars">
+                        <div class="blogcontent">
+                            
+                            <h4 style="color: #062424;">Fast</h4>
+                            <p style="color: #062424;">Lorem ipsuLorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolor..m dolor..</p>
+                        </div>
+                    </div>
+                    <div class="blogcolumn cars">
+                        <div class="blogcontent">
+                            
+                            <h4 style="color: #062424;">Classic</h4>
+                            <p style="color: #062424;">Lorem ipLorem ipsum dolor..Lorem ipsum dolor..sum dolor..</p>
+                        </div>
+                    </div>
+            
+                    <div class="blogcolumn people">
+                        <div class="blogcontent">
+                            
+                            <h4 style="color: #062424;">Girl</h4>
+                            <p style="color: #062424;">Lorem ipLorem ipsum dolor..Lorem ipsum dolor..sum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="blogcolumn people">
+                        <div class="blogcontent">
+                            
+                            <h4 style="color: #062424;">Man</h4>
+                            <p style="color: #062424;">Lorem ipLorem ipsum dolor..sum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="blogcolumn people">
+                        <div class="blogcontent">
+                            
+                            <h4 style="color: #062424;">Woman</h4>
+                            <p style="color: #062424;">Lorem ipsuLorem ipsum dolor..Lorem ipsum dolor..m dolor..</p>
+                        </div>
+                    </div>
+                    <!-- END GRID -->
+                </div>
+            
+                <!-- END MAIN -->
+            </div>
+        </div>
+
+            <script>
+                filterSelection("all")
+                function filterSelection(c) {
+                    var x, i;
+                    x = document.getElementsByClassName("blogcolumn");
+                    if (c == "all") c = "";
+                    for (i = 0; i < x.length; i++) {
+                        w3RemoveClass(x[i], "blogshow");
+                        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "blogshow");
+                    }
+                }
+
+                function w3AddClass(element, name) {
+                    var i, arr1, arr2;
+                    arr1 = element.className.split(" ");
+                    arr2 = name.split(" ");
+                    for (i = 0; i < arr2.length; i++) {
+                        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                    }
+                }
+
+                function w3RemoveClass(element, name) {
+                    var i, arr1, arr2;
+                    arr1 = element.className.split(" ");
+                    arr2 = name.split(" ");
+                    for (i = 0; i < arr2.length; i++) {
+                        while (arr1.indexOf(arr2[i]) > -1) {
+                            arr1.splice(arr1.indexOf(arr2[i]), 1);
+                        }
+                    }
+                    element.className = arr1.join(" ");
+                }
+
+
+                // Add active class to the current button (highlight it)
+                var btnContainer = document.getElementById("blogmyBtnContainer");
+                var btns = btnContainer.getElementsByClassName("blogbtn");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function () {
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                    });
+                }
+            </script>
+        </div>
+<br>
+<br>
+       
+
+        <!-- Packages / Pricing Tables -->
+        <div class="w3-container" id="packages" style="margin-top:120px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>CV</b></h1>
+            <hr style="width:50px;border:5px solid #062424" class="w3-round">
+            <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irureSome text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irureSome text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea cis nisi
+                ut aliquip ex ea commodo consequat. Duis aute irureSome text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irureSome text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irureSome text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irureSome text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure</p>
+        </div>
+
+        
+
+        <!-- Contact -->
+        <div class="w3-container" id="contact" style="margin-top:px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+            <hr style="width:50px;border:5px solid #062424" class="w3-round">
+            <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting
+                new people!</p>
+            <form action="/action_page.php" target="_blank">
+                <div class="w3-section">
+                    <label>Name</label>
+                    <input class="w3-input w3-border" type="text" name="Name" required>
+                </div>
+                <div class="w3-section">
+                    <label>Email</label>
+                    <input class="w3-input w3-border" type="text" name="Email" required>
+                </div>
+                <div class="w3-section">
+                    <label>Message</label>
+                    <input class="w3-input w3-border" type="text" name="Message" required>
+                </div>
+                <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+    
+        <!-- End page content -->
+    
+   
+
+   
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+
+</html>

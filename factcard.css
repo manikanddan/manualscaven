@@ -1,0 +1,61 @@
+
+.factcardBox {
+  float: left;
+  font-size: 1em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+
+.factcard {
+  background: rgb(255, 255, 255);
+  cursor: default;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+  text-align: center;
+}
+
+
+
+.factcard .factfront,
+.factcard .factback {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color:  #696969;;
+  display: block;
+  font-size: 1em;
+  height: 100%;
+  padding: 0.8em;
+  position: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .factcardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .factcard {
+    height: 285px;
+  }
+  .factcardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .factcardBox {
+    width: 94.5%;
+  }
+  .factcard {
+    height: 260px;
+  }
+}
