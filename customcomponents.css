@@ -521,8 +521,39 @@ div.techcontainer {
   background-color: rgb(233, 233, 233);
 }
 
+s, del {
+    text-decoration: none;    /*we're replacing the default line-through*/
+    position: relative;
+    display: inline-block; /* don't wrap to multiple lines */
+}
+s:after, del:after {
+    content:"";    /* required property */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 8px solid rgb(146, 146, 146);
+    height: 65%;    /* adjust as necessary, depending on line thickness */
+    /* or use calc() if you don't need to support IE8: */
+    height: calc(65%); /* 1px = half the line thickness */
+    width: 100%;
+    transform: rotateZ(-0deg);
+}
 
+@media screen and (min-width: 500px){
+    #mobileonly{
+        visibility: hidden;
+    }
+  }
 
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+        #mobileonly {
+            display: block;
+        }
+
+        #desktoponly {
+            display: none;
+        }
+    }
 
 
 
