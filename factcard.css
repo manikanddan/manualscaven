@@ -37,14 +37,14 @@
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .factcardBox {
-    margin-left: 2.8%;
-    margin-top: 3%;
-    width: 46%;
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 100%;
   }
   .factcard {
-    height: 285px;
+    height: 350px;
   }
   .factcardBox:last-child {
     margin-bottom: 3%;
@@ -56,6 +56,6 @@
     width: 94.5%;
   }
   .factcard {
-    height: 260px;
+    height: 300px;
   }
 }
